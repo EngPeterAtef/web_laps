@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Sign Up Form</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" class="input-text" />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" class="input-text" />
+      <p id="password-error" class="error-msg"></p>
+
+      <label for="retype-password">Retype Password:</label>
+      <input
+        type="password"
+        id="retype-password"
+        name="retype-password"
+        class="input-text"
+      />
+      <p id="retype-password-error" class="error-msg"></p>
+
+      <label for="gender" class="gender-label">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" checked />
+      <label for="male" class="gender-label">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female" class="gender-label">Female</label>
+      <p id="gender-error" class="error-msg"></p>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" class="input-text" />
+      <p id="age-error" class="error-msg"></p>
+
+      <label for="account-type">Account Type:</label>
+      <select id="account-type" name="account-type" class="input-text">
+        <option value="Student" selected>Student</option>
+        <option value="Professor">Professor</option>
+        <option value="Teaching Assistant">Teaching Assistant</option>
+      </select>
+      <p id="account-type-error" class="error-msg"></p>
+
+      <br />
+
+      <div class="buttonContainer">
+        <input type="submit" value="Submit" id="submit" />
+      </div>
+    </form>
+    <hr />
+    <footer>ⓒ Learn 2023-2024</footer>
+    <script src="index.js"></script>
+  </body>
+</html>

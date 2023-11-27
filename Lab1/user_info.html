@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="user-info">
+      <p id="welcome-message"></p>
+      <p id="account-type"></p>
+      <p id="teaching-id"></p>
+    </div>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const username = urlParams.get("username");
+      const accountType = urlParams.get("accountType");
+      const teachingId = urlParams.get("teachingId");
+
+      document.getElementById(
+        "welcome-message"
+      ).innerHTML = `Hello, <strong>${username}</strong>`;
+      document.getElementById(
+        "account-type"
+      ).innerHTML = `You are successfully registered as: <strong>${accountType}</strong>`;
+      document.getElementById(
+        "teaching-id"
+      ).innerHTML = `Your teaching ID = <strong>${teachingId}</strong>`;
+    </script>
+  </body>
+</html>
