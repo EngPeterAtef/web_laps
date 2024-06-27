@@ -1,0 +1,19 @@
+p.ItemName {
+	text-align:center; color:Orange; font-size:30px
+}
+
+p.ItemPrice {
+	color:Green; font-size:20px
+}
+.btn{
+	background-color: #661226;
+	padding: 12px 40px;
+	margin-top: 30px;
+	margin-left: 30px;
+	border-radius: 7%;
+	color: white;
+}
+.btn:hover{
+	background-color: #E390A3;
+	border: 1px solid #E390A3;
+}

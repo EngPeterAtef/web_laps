@@ -1,0 +1,199 @@
+<html>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+
+  <head>
+    <title>My First HTML Document</title>
+  </head>
+
+  <body style="margin: 2em">
+    <table
+      style="border-collapse: collapse; margin-left: auto; margin-right: auto"
+    >
+      <!-- 
+            border-collapse: collapse;: used to use one line border insetead of two lines
+            margin-left: auto; margin-right: auto;: used to center the table
+         -->
+      <thead>
+        <tr style="background-color: grey">
+          <th colspan="8" style="border: 1px solid black; border-right: none">
+            <h3 style="padding: 10px; font-size: 30px; text-align: left">
+              Cairo University<br />Faculty of Engineering<br />Computer
+              Engineering Dept.
+            </h3>
+          </th>
+          <th colspan="2" style="border-left: none">
+            <img
+              style="align-self: center"
+              src="./First.png"
+              width="60%"
+              height="auto"
+              alt="temp1"
+            />
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background-color: grey; margin: 0px">
+          <th colspan="2" style="font-size: 2vw; text-align: center">
+            <a style="color: blue; margin: 20px" href="http://eng.cu.edu.eg/en/"
+              ><strong style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+                >Home</strong
+              ></a
+            >
+          </th>
+          <th
+            colspan="4"
+            style="font-size: 2vw; text-align: center; margin: 0px"
+          >
+            <a style="color: blue; margin: 20px" href="http://eng.cu.edu.eg/en/"
+              ><strong style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+                >Undergraduate</strong
+              ></a
+            >
+          </th>
+          <th
+            colspan="4"
+            style="font-size: 2vw; text-align: center; margin: 0px"
+          >
+            <a style="color: blue; margin: 20px" href="http://eng.cu.edu.eg/en/"
+              ><strong style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+                >Research</strong
+              ></a
+            >
+          </th>
+          <!-- <th colspan="2" style="margin:0px;"></th> -->
+        </tr>
+        <tr>
+          <td colspan="4" style="padding: 2vw; text-align: center">
+            <img
+              style="align-self: center"
+              src="./Second.jpg"
+              width="100%"
+              height="auto"
+              alt="temp2"
+            />
+          </td>
+          <td colspan="6" style="padding: 1vw; font-size: 2vw">
+            <h2 style="margin-top: 0.5vw; margin-bottom: 0.5vw">
+              Ahmed Mohamed Zaki
+            </h2>
+            <p style="margin-top: 0.5vw; margin-bottom: 0.5vw">
+              <strong style="margin-right: 6.8vw">ID#</strong>1122062
+            </p>
+            <p style="margin-top: 0.5vw; margin-bottom: 0.5vw">
+              <strong style="margin-right: 6.1vw">Year</strong>Senior-2
+            </p>
+            <p style="margin-top: 0.5vw; margin-bottom: 0.5vw">
+              <strong style="margin-right: 5vw">Email</strong
+              ><a href="mailto:azaki@gmail.com">azaki@gmail.com</a>
+            </p>
+            <p style="margin-top: 0.5vw; margin-bottom: 0.5vw">
+              <strong style="margin-right: 5vw">Phone</strong>0100 1874 502
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td
+            colspan="4"
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              padding: 0px;
+              font-size: 2vw;
+              text-align: center;
+            "
+          >
+            <div style="margin-bottom: 12vw">
+              <strong>Porjects</strong>
+            </div>
+          </td>
+          <td colspan="6">
+            <ul
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                padding: 0em 2em;
+                font-size: 2vw;
+                margin: 0px;
+              "
+            >
+              <li>
+                Logic Gate Simulator
+                <ul>
+                  <li>Supervised by <em> Dr. Ali Ahmed.</em></li>
+                  <li>Sponsored by <em>XYZ Labs.</em></li>
+                </ul>
+              </li>
+              <li>
+                Automated Garage System
+                <ul>
+                  <li>Supervised by <em>Dr. Mohamed Ali</em></li>
+                  <li>Sponsored by <em>ABC Labs.</em></li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td
+            colspan="4"
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 2vw;
+              text-align: center;
+            "
+          >
+            <div style="margin-bottom: 5vw">
+              <strong>Courses</strong>
+            </div>
+          </td>
+          <td colspan="6">
+            <ol
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                padding: 0em 2em;
+                font-size: 2vw;
+                margin: 0;
+              "
+            >
+              <li>Programming Techniques</li>
+              <li>Logic Design</li>
+              <li>Consultation</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th
+            colspan="4"
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 2vw;
+              text-align: center;
+            "
+          >
+            <div style="margin-bottom: 3vw">
+              <strong>Training</strong>
+            </div>
+          </th>
+          <td colspan="6">
+            <ul
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                padding: 0em 2em;
+                font-size: 2vw;
+                margin: 0px;
+              "
+            >
+              <li>Microsoft</li>
+              <li>Ejada Systems</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(122, 43, 6);
+    color:yellow;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: rgb(245, 3, 225);
+    text-align: center;
+}
+p.error{
+    color: red;
+}

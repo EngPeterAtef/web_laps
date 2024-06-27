@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>My Second HTML Document</title>
+    </head>
+    <body>
+        <h1>Student Information Form</h1>
+        <form name="input" action="" method="get">
+            Student Name: <input type="text" name="StudentName"/><br/>
+            Studying Year (1 means junior & 5 means senior): <input type="number" min="1" max = "5" name="StudyingYear" required/><br/>
+            <input type="radio"  name="gender" required/> Male<br/>
+            <input type="radio"  name="gender" required/> Female<br />
+            Major
+            <select name="Major">
+				<option value="CCE" selected>CCE</option>
+				<option value="EEE">EEE</option>
+				<option value="MDE">MDE</option>
+				<option value="AET">AET</option>
+            </select>
+            <br/>
+            Summary of internships taken (write at most 60 characters)
+            <br>
+            <textarea maxlength = "60" name = "Summary"></textarea>
+            <br>
+            <input type="submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
