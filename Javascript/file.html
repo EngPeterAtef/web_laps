@@ -1,150 +1,168 @@
-
 <html>
-    <head>
-        <title>Organic Menu</title>
-        <link rel="stylesheet" href="style.css"> 
-		<script type="text/javascript">
-			
-			var QTY=[0, 0, 0,0];
-			
-			function AddItem(index) {
-				QTY[index]+=1;
-				alert("Ticket is added to cart successfully :)");
-			}
+  <head>
+    <title>Organic Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+      var QTY = [0, 0, 0, 0];
 
-			function Delete(){
-				if(QTY.every(item => item === 0))
-				{
-					alert("Your cart is already empty :)");
-				}
-					
-				else{
-					QTY=[0, 0, 0,0];
-				alert("tickets are deleted successfully :)");
-				}
-				
-			} 
-			function Print() {
-				
-				var TotAmount = QTY[0]*12000 + QTY[1]*10000+ QTY[2]*8000+ QTY[3]*7000;
-				var message ="Ticket                                    Price          Qty.\n";
-				message += "------------------------------------------------\n"
-				if (QTY[0]>0)
-					message += "Category 1 Opening Match       12,000             " + QTY[0] + "\n";
-				
-				if (QTY[1]>0)
-					message += "Category 2 Opening Match       10,000             " + QTY[1] + "\n";
-				
-				if (QTY[2]>0)
-					message += "Category 3 Opening Match       8,000             " + QTY[2] + "\n";
-				
-				if (QTY[3]>0)
-					message += "Category 4 Opening Match       7,000             " + QTY[3] + "\n";
-				
-				message += "------------------------------------------------\n"
-				message += "Total Amount:     "+TotAmount;
-				alert(message);
-				TotAmount=0;
-				QTY=[0, 0, 0,0];
-			}
-		</script>
+      function AddItem(index) {
+        QTY[index] += 1;
+        alert("Ticket is added to cart successfully :)");
+      }
 
-    </head>
-    <body>
-        <header>
-			<img style="height: 100%; width: 100%" src="fifa-tickets.jpg"/>   
-        </header>
-       
-	    <table>
-			
-				<tr> 
-					<!-- <th>Category 1</th> -->
-					<th><img style="height: 200; width: 200" src="category1.png"/></th>
-					<td> 
-						<p class="ItemName">Category 1</p>
-						<p> Category 1 seats being the highest priced and located in prime areas within the stadium</p>
-						<p class="ItemPrice">Price: 12,000 L.E</p>
-				
-						
-					
-					</td>
-					<td>
-						<button type="button" value="AddItem" class="btn" onclick="AddItem(0)">Add ticket</button>
-					</td>
-					
-					
-				</tr>
-				
-				<tr> 
-					<th><img style="height: 200; width: 200" src="category2.png"/></th>
-					
-					<td> 
-						<p class="ItemName">Category 2</p>
-						<p>Located primarily in the corners of each stadium,<br/>
-							 Category 2 tickets balance good views of the action at the 2022 FIFA World Cup with affordability.</p>
-							 <p class="ItemPrice">Price: 10,000 L.E</p>
-				
-							
-						
-					
-					</td>
-					<td>
-						<button type="button" value="AddItem" class="btn"  onclick="AddItem(1)">Add ticket</button>
-					</td>
-					
-				</tr>
-				
-				<tr> 
-					<th><img style="height: 200; width: 200" src="category3.png"/></th>
-				
-					<td> 
-						<p class="ItemName"> Category 3</p>
-						<p>Category 3 seats are located behind the goals,<br/>
-							 and are the most affordable tickets available at the 2022 FIFA World Cup for non-Qatari residents.</p>
-							 <p class="ItemPrice">Price: 8,000 L.E</p>
-				
-							
-						
-					
-					</td>
-					<td>
-						<button type="button" value="AddItem" class="btn"  onclick="AddItem(2)">Add ticket</button>
-					</td>
-					
-				</tr>
-				<tr> 
-					<th><img style="height: 200; width: 200" src="category4.png"/></th>
-					
+      function Delete() {
+        if (QTY.every((item) => item === 0)) {
+          alert("Your cart is already empty :)");
+        } else {
+          QTY = [0, 0, 0, 0];
+          alert("tickets are deleted successfully :)");
+        }
+      }
+      function Print() {
+        var TotAmount =
+          QTY[0] * 12000 + QTY[1] * 10000 + QTY[2] * 8000 + QTY[3] * 7000;
+        var message =
+          "Ticket                                    Price          Qty.\n";
+        message += "------------------------------------------------\n";
+        if (QTY[0] > 0)
+          message +=
+            "Category 1 Opening Match       12,000             " +
+            QTY[0] +
+            "\n";
 
-					<td> 
-						<p class="ItemName">Category 4</p>
-						<p>Category 4 is reserved exclusively for residents of Qata</p>
-						<p class="ItemPrice"> Price: 7,000 L.E</p>
-				
-						
-						
-					
-					</td>
-					<td>
-						<button type="button" value="AddItem" class="btn"  onclick="AddItem(3)">Add ticket</button>
-					</td>
-					
-				</tr>
-				
-				<tr> 
-					<td></td>
-					<td></td>
-					<td>
-						<button type="button" value="Print" class="btn"  onclick="Print()">Checkout</button>
-					</td>
+        if (QTY[1] > 0)
+          message +=
+            "Category 2 Opening Match       10,000             " +
+            QTY[1] +
+            "\n";
 
-					<td>
-						<button type="button" value="Delete" class="btn"  onclick="Delete()">Delete Selections</button>
-					</td>
-				</tr>
-                       
-        </table>
-		
-        
-    </body>
+        if (QTY[2] > 0)
+          message +=
+            "Category 3 Opening Match       8,000             " + QTY[2] + "\n";
+
+        if (QTY[3] > 0)
+          message +=
+            "Category 4 Opening Match       7,000             " + QTY[3] + "\n";
+
+        message += "------------------------------------------------\n";
+        message += "Total Amount:     " + TotAmount;
+        alert(message);
+        TotAmount = 0;
+        QTY = [0, 0, 0, 0];
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <img style="height: 100%; width: 100%" src="fifa-tickets.jpg" />
+    </header>
+
+    <table>
+      <tr>
+        <!-- <th>Category 1</th> -->
+        <th><img style="height: 200; width: 200" src="category1.png" /></th>
+        <td>
+          <p class="ItemName">Category 1</p>
+          <p>
+            Category 1 seats being the highest priced and located in prime areas
+            within the stadium
+          </p>
+          <p class="ItemPrice">Price: 12,000 L.E</p>
+        </td>
+        <td>
+          <button
+            type="button"
+            value="AddItem"
+            class="btn"
+            onclick="AddItem(0)"
+          >
+            Add ticket
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <th><img style="height: 200; width: 200" src="category2.png" /></th>
+
+        <td>
+          <p class="ItemName">Category 2</p>
+          <p>
+            Located primarily in the corners of each stadium,<br />
+            Category 2 tickets balance good views of the action at the 2022 FIFA
+            World Cup with affordability.
+          </p>
+          <p class="ItemPrice">Price: 10,000 L.E</p>
+        </td>
+        <td>
+          <button
+            type="button"
+            value="AddItem"
+            class="btn"
+            onclick="AddItem(1)"
+          >
+            Add ticket
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <th><img style="height: 200; width: 200" src="category3.png" /></th>
+
+        <td>
+          <p class="ItemName">Category 3</p>
+          <p>
+            Category 3 seats are located behind the goals,<br />
+            and are the most affordable tickets available at the 2022 FIFA World
+            Cup for non-Qatari residents.
+          </p>
+          <p class="ItemPrice">Price: 8,000 L.E</p>
+        </td>
+        <td>
+          <button
+            type="button"
+            value="AddItem"
+            class="btn"
+            onclick="AddItem(2)"
+          >
+            Add ticket
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th><img style="height: 200; width: 200" src="category4.png" /></th>
+
+        <td>
+          <p class="ItemName">Category 4</p>
+          <p>Category 4 is reserved exclusively for residents of Qata</p>
+          <p class="ItemPrice">Price: 7,000 L.E</p>
+        </td>
+        <td>
+          <button
+            type="button"
+            value="AddItem"
+            class="btn"
+            onclick="AddItem(3)"
+          >
+            Add ticket
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <button type="button" value="Print" class="btn" onclick="Print()">
+            Checkout
+          </button>
+        </td>
+
+        <td>
+          <button type="button" value="Delete" class="btn" onclick="Delete()">
+            Delete Selections
+          </button>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
